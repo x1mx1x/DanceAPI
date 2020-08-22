@@ -1,0 +1,12 @@
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\DanceAPIDataAccess.dll.config
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\DanceAPIDataAccess.dll
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\DanceAPIDataAccess.pdb
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\obj\Debug\DanceAPIDataAccess.csprojAssemblyReference.cache
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\obj\Debug\DanceAPIDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\obj\Debug\DanceAPIDataAccess.csproj.CopyComplete
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\obj\Debug\DanceAPIDataAccess.dll
+C:\Users\priby\source\repos\DanceAPI\DanceAPIDataAccess\obj\Debug\DanceAPIDataAccess.pdb
