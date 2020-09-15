@@ -1,8 +1,8 @@
 ﻿
-using DanceAPIDataAccess;
+using DanceAPIDataAccess.Models;
 using System.Linq;
 
-namespace StudySierrDataAccess.Domain.Repository
+namespace DanceAPIDataAccess.Repository
 {
     public class CompetitionRepository : IRepository<CompetitionCatalog, int>
     {
@@ -35,12 +35,12 @@ namespace StudySierrDataAccess.Domain.Repository
         public CompetitionCatalog Get(int id)
         {
             return context.CompetitionCatalog
-                .FirstOrDefault(p => p.CompId == id);
+                .FirstOrDefault(p => p.CompetitionCatalogId == id);
         }
 
         public IQueryable<CompetitionCatalog> GetAll()
         {
-            return context.CompetitionCatalog;
+            return (IQueryable<CompetitionCatalog>)context.CompetitionCatalog;
         }
     }
 }

@@ -1,14 +1,27 @@
-﻿using System.Collections.Generic;
-
-public partial class DanceGroup
+namespace DanceAPIDataAccess.Models
 {
-    public DanceGroup()
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("DanceGroup")]
+    public partial class DanceGroup
     {
-        this.Category = new HashSet<Category>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DanceGroup()
+        {
+            Category = new HashSet<Category>();
+        }
+
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int DanceGroupId { get; set; }
+
+        [StringLength(15)]
+        public string DanceGroupName { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Category> Category { get; set; }
     }
-
-    public int DanceGroupId { get; set; }
-    public string DanceGroupName { get; set; }
-
-    public virtual ICollection<Category> Category { get; set; }
 }

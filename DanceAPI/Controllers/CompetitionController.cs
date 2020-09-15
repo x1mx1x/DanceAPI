@@ -28,11 +28,19 @@ namespace DanceAPI.Controllers
         }
 
         [HttpGet]
+        public ActionResult GetCompetitionList()
+        {
+            return Json(competitionService.GetAll(), JsonRequestBehavior.AllowGet);
+        }
+        [HttpGet]
+        public ActionResult GetCompetitionPage()
+        {
+            return View("Competition");
+        }
         public ActionResult CompetitionList()
         {
-            return Json(competitionService.GetAll());
+            return View();
         }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

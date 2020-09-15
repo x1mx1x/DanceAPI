@@ -22,3 +22,18 @@ textarea {
     flex-direction: row;
     justify-content: flex-end;
 }
+
+.comptable {
+    margin-top: 100px;
+    font: 170% serif;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 2px solid #b9b9b9;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tbody > tr > td {
+    padding: 25px;
+}
+.table > thead:first-child > tr:first-child > th {
+    border-top: 2px solid #b9b9b9;
+}

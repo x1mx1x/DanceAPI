@@ -78,7 +78,6 @@ C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Newtonsoft.Json.xml
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Antlr3.Runtime.pdb
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\EntityFramework.xml
-C:\Users\priby\source\repos\DanceAPI\DanceAPI\obj\Debug\DanceAPI.csprojAssemblyReference.cache
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\obj\Debug\DanceAPI.csproj.CoreCompileInputs.cache
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\obj\Debug\DanceAPI.csproj.CopyComplete
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\obj\Debug\DanceAPI.dll
@@ -93,3 +92,6 @@ C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Ninject.xml
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Ninject.Web.Common.xml
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\Ninject.Web.Mvc.xml
+C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\priby\source\repos\DanceAPI\DanceAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\priby\source\repos\DanceAPI\DanceAPI\obj\Debug\DanceAPI.csprojAssemblyReference.cache

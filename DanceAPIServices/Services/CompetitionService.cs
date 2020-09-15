@@ -1,6 +1,5 @@
 ﻿using DanceAPIDataAccess;
 using DanceAPIServices.Services.Interfaces;
-using StudySierrDataAccess.Domain.Repository;
 using System;
 using System.Linq;
 
@@ -21,13 +20,12 @@ namespace DanceAPIServices.Services
 
         public object GetAll()
         {
-           
-            var comps =  (
-                from comp in uow.CompetitionCatalogs.GetAll()
-                select new { comp.CompName, comp.City, comp.CompDate }
-            ).ToList();
 
-            return new object();
+            return  (
+                from comp in uow.CompetitionCatalogs.GetAll()
+                join city in uow.City.GetAll() on comp.CityId equals city.CityId
+                select new { comp.CompName,city.CityName, comp.CompDate}
+            ).ToList();
             /*return (from competition in context.CompetitionCatalog
                     join city in context.City on competition.CityId equals city.CityId
                     select new { competition.CompName, competition.CompDate, }).ToList();*/

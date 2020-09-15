@@ -1,14 +1,27 @@
-﻿using System.Collections.Generic;
-
-public partial class DanceForm
+namespace DanceAPIDataAccess.Models
 {
-    public DanceForm()
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("DanceForm")]
+    public partial class DanceForm
     {
-        this.Category = new HashSet<Category>();
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DanceForm()
+        {
+            Category = new HashSet<Category>();
+        }
+
+        public int DanceFormId { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string DanceformName { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Category> Category { get; set; }
     }
-
-    public int DanceFormId { get; set; }
-    public string DanceformName { get; set; }
-
-    public virtual ICollection<Category> Category { get; set; }
 }

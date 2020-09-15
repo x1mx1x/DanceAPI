@@ -1,4 +1,5 @@
-﻿using StudySierrDataAccess.Domain.Repository;
+﻿using DanceAPIDataAccess.Models;
+using DanceAPIDataAccess.Repository;
 using System;
 
 namespace DanceAPIDataAccess
@@ -11,13 +12,14 @@ namespace DanceAPIDataAccess
 
 
         private IRepository<CompetitionCatalog, int> competitionRepository;
+        private IRepository<City, int> cityRepository;
 
         private bool disposed = false;
 
         #endregion
 
 
-       public IRepository<CompetitionCatalog, int> CompetitionCatalogs
+        public IRepository<CompetitionCatalog, int> CompetitionCatalogs
         {
             get
             {
@@ -27,7 +29,17 @@ namespace DanceAPIDataAccess
                 return competitionRepository;
             }
         }
-      
+        public IRepository<City, int> City
+        {
+            get
+            {
+                if (cityRepository == null)
+                    cityRepository = new CityRepository(context);
+
+                return cityRepository;
+            }
+        }
+
         public UnitOfWork(DanceAPIDataContext context)
         {
             this.context = context;
