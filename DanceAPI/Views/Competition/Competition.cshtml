@@ -1,7 +1,28 @@
-﻿
+﻿@model DanceAPIDataAccess.ViewModels.CompetitionPageViewModel
 @{
     ViewBag.Title = "Competition";
     Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
-<h2>Competition</h2>
+}
+<using (Html.BeginForm("CreateMenuItem","Admin",FormMethod.Post)) {>
+    <: Html.ValidationSummary(true) >
+
+<fieldset>
+    <legend>Fields</legend>
+
+    <div class="editor-label">
+        <%: Html.LabelFor(model => model.Caption) %>
+    </div>
+    <div class="editor-field">
+        <%: Html.TextBoxFor(model => model.Caption) %>
+        <%: Html.ValidationMessageFor(model => model.Caption) %>
+    </div>
+
+    <div class="editor-label">
+        <%: Html.LabelFor(model => model.Link) %>
+    </div>
+    <div class="editor-field">
+        <%: Html.TextBoxFor(model => model.Link) %>
+        <%: Html.ValidationMessageFor(model => model.Link) %>
+    </div>
+</fieldset>

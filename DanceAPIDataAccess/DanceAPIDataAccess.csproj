@@ -96,18 +96,27 @@
     <Compile Include="Models\DanceGroup.cs" />
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\DocumentName.cs" />
+    <Compile Include="Models\DuetCompetitor.cs" />
     <Compile Include="Models\Duets.cs" />
+    <Compile Include="Models\GroupCompetitor.cs" />
     <Compile Include="Models\Groups.cs" />
+    <Compile Include="Repository\CategoryRepository.cs" />
     <Compile Include="Repository\CityRepository.cs" />
+    <Compile Include="Repository\CompetitorRepository.cs" />
+    <Compile Include="Repository\DuetCompetitorRepository.cs" />
+    <Compile Include="Repository\GroupCompetitorRepository.cs" />
     <Compile Include="Repository\Interfaces\IRepository.cs" />
     <Compile Include="DanceAPIDataContext.cs" />
     <Compile Include="Models\Nomination.cs" />
     <Compile Include="Models\Organizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CompetitionRepository.cs" />
+    <Compile Include="Repository\NominationRepository.cs" />
+    <Compile Include="Repository\OrganizerRepository.cs" />
     <Compile Include="sysdiagrams.cs" />
     <Compile Include="Models\Trainer.cs" />
     <Compile Include="UnitOfWork.cs" />
+    <Compile Include="ViewModels\CompetitionPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

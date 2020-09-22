@@ -22,6 +22,8 @@ namespace DanceAPIDataAccess
         public virtual DbSet<Duets> Duets { get; set; }
         public virtual DbSet<Groups> Groups { get; set; }
         public virtual DbSet<Nomination> Nomination { get; set; }
+        public virtual DbSet<GroupCompetitor> GroupCompetitor { get; set; }
+        public virtual DbSet<DuetCompetitor> DuetCompetitor { get; set; }
         public virtual DbSet<Organizer> Organizer { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Trainer> Trainer { get; set; }

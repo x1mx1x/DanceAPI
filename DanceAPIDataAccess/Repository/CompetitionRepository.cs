@@ -40,7 +40,7 @@ namespace DanceAPIDataAccess.Repository
 
         public IQueryable<CompetitionCatalog> GetAll()
         {
-            return (IQueryable<CompetitionCatalog>)context.CompetitionCatalog;
+            return context.CompetitionCatalog;
         }
     }
 }

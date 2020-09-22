@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DanceAPIDataAccess.ViewModels;
 using DanceAPIServices.Services;
 using DanceAPIServices.Services.Interfaces;
 
@@ -32,11 +33,16 @@ namespace DanceAPI.Controllers
         {
             return Json(competitionService.GetAll(), JsonRequestBehavior.AllowGet);
         }
-        [HttpGet]
-        public ActionResult GetCompetitionPage()
+
+
+        [HttpPost]
+        public ActionResult GetCompetitionPage(CompetitionPageViewModel competition)
         {
-            return View("Competition");
+            return View("Competition", competitionService.GetCompetitionById(competition.Id));
         }
+
+
+
         public ActionResult CompetitionList()
         {
             return View();
